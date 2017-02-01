@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Video Player</title>
+	<link rel="stylesheet" type="text/css" href="player.css">
+	<script type="text/javascript" src="player.js"></script>
+</head>
+<body>
+
+	<!--
+	Default Video Tag. Add controls for complete video player features
+	
+	<video src="sample.mp4" controls>
+	</video>
+	
+	A good way of putting this is by using source tag. By using this, if some browser doesn't have the mp4 codecs installed, the video played will be in the avi format (if avi codecs exist).
+
+	<video poster="images/thumbnail.png">
+		<source src="sample.mp4">
+		<source src="sample.avi">
+	</video>
+	--> 
+
+	<!-- 
+		div has a property of block display so they go in a separate line automatically
+	-->
+
+	<div id="player">
+
+		<div id="video-container">
+			<div id="screen">
+				<img id="screen-button" src="images/play.png">
+			</div>
+			<video id="video" poster="https://ichef.bbci.co.uk/images/ic/640x360/p046dthw.jpg">
+				<source src="http://techslides.com/demos/sample-videos/small.mp4">
+			</video>
+		</div>
+
+		<div id="pbar-container">
+			<div id="pbar">
+				
+			</div>
+		</div>
+
+		<div id="buttons-container">
+			<img id="play-button" src="images/play.png">
+			<div id="time-field">
+				0:00 / 0:00
+			</div>
+			<img id="sound-button" src="images/sound.png">
+			<div id="sbar-container">
+				<div id="sbar">
+					
+				</div>
+			</div>
+			<img id="fullscreen-button" src="images/fullscreen.png">
+		</div>
+
+	</div>
+
+</body>
+</html>
